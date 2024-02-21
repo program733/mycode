@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 # Main Streamlit app code
 def main():
     st.title('Scatter Chart Analysis')
+    plt.rcParams['interactive'] = True
 
     # Upload CSV file
     csv_file = st.file_uploader('Upload CSV File', type=['csv'])
